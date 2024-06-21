@@ -33,7 +33,6 @@ footer{
     width: 100%;
     font-size: 8px;
 }
-
 h2{
     text-align: center;
     font-size: 1.25em;
@@ -46,4 +45,7 @@ img{
 }
 h1{
     font-size: 2em;
+}
+a{
+    color: #421439;
 }
