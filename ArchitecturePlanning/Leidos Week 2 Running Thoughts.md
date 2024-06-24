@@ -1,4 +1,4 @@
-s**Monday**
+**Monday**
 
 _Morning 06/24_
 - Trying to download LLaMA this morning. After reading through the terms and conditions and determining that we  could download both LLaMA 2 and LLaMA 3, we decided to run with LLaMA 2 for the project
@@ -13,3 +13,14 @@ _Afternoon 06/24_
 - md5sum is automatically downloaded with Git
 	- md5sm is able to turn any file into a 16-byte hash, it shouldn't be too integral to the issues at hand
 - Worked on outline the webpage a lot more (focusing on the homepage at the time or writing this). Goal is to rework the webpage today to literally include zero css/design and just get all the content ready
+- After talking with Mundy about the issues I was having with the installation of LLaMA, it seems the issue has been with me all along and the way my git terminal was set up
+	- After sliding down the thread, one of the commenters (SenthilVikram my goat) instructed how wget and md5sum have to be native to the terminal itself, not just in an environment
+	- Issue: Leidos security does not appreciate me trying do download .exe files. 
+		- It will let me download the zip without the .exe, or I can download the .exe but running it will close the program immediately 
+	- Current running plan is to download the wget.exe and then manually move the file to where all the other Git Bash executables are stored
+- Visited IT to re-get dev enabled access; nothing about the situation has changed
+	- Being DevEnabled is not the same things as being an administrator meaning I still can't run executables* or move executables wherever I want 
+		- Obsidian executable did and still is able to run. 
+- This issue will be put off until tomorrow for two reasons. 
+	- I sent in a request to IT for a SmartCard (or more accurately, the ability to download and move wget)
+	- Might want to walk Mundy through the plan
