@@ -47,3 +47,46 @@ img{
 h1{
     font-size: 2em;
 }
+.triangle{
+    width: 250;
+    height: 250;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f4f4f4e0;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('your-image-url.jpg');
+
+    /* Full height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 20px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url(NissanLady.JPG);
+}
