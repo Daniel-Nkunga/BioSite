@@ -32,3 +32,10 @@ _Morning 06/25_
 	- That being said, nothing beats the satisfaction of things being download
 - Downloading both 7B and &B chat because it seems like 7B Chat (7BC) will provide a more conversational response which is more in tune with the goal of this model
 	- While waiting for the models to download (about 1.5 hours), I both read through the articles for MLBC and worked a bit on the Blog/Website
+- Environment was set up pretty easily but currently erroring out when trying to run the example program because of socketing issues (it wants to use the internet); I don't know where this call is being made
+	- Exact code run: torchrun -1 1 example_chat_completion.py \ --ckpt_dir llama-2-7b-chat/ \ --tokenizer_path tokenizer.model \ --max_seq_len 512 --max_batch_size 6
+		- I don't know what exactly the program wants from the second and third parameters. To me, the instructions of what to replace for that part are a bit ambiguous but I'll ask someone else about it in a moment
+			- Specifically, I edited the -nproc_per_node parameter with the value they wanted from me but I'm unsure if they want "-1" or just "1"
+				- If its just one (which would make more sense), there's a small typo on the instructions 
+		- I haven' touched the paths at all since everything is still local to the one folder but that also might be a potential issue
+- Error possible comes here:  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\launcher\api.py", line 132, in \_\_call__ return launch_agent(self._config, self._entrypoint, list(args))
