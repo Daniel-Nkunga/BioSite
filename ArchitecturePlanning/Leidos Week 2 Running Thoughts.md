@@ -24,3 +24,11 @@ _Afternoon 06/24_
 - This issue will be put off until tomorrow for two reasons. 
 	- I sent in a request to IT for a SmartCard (or more accurately, the ability to download and move wget)
 	- Might want to walk Mundy through the plan
+
+_Morning 06/25_
+- DevEnabled access does give access to Admin privileges on the laptops, I just needed to log in via a different method
+	- So much struggle yesterday and for what? A two second showcase to IT where they fixed the problem without even trying? 
+- LLaMA is downloading but I now worry it might be taking its sweet time
+	- That being said, nothing beats the satisfaction of things being download
+- Downloading both 7B and &B chat because it seems like 7B Chat (7BC) will provide a more conversational response which is more in tune with the goal of this model
+	- While waiting for the models to download (about 1.5 hours), I both read through the articles for MLBC and worked a bit on the Blog/Website

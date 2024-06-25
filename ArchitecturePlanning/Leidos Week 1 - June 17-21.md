@@ -2,11 +2,11 @@
 
 _Intro Paragraph_
 
-Through all of the onboarding procedures and acclimations to a new environment, my first week at Leidos was also full of an incredible amount of learning experiencing what working at this internship would be like. My week was spent researching transformers  where the goal was to provide commentary of the given status of a simulation based of visual feedback (image-to-text).
+Through all of the onboarding procedures and acclimations to a new environment, my first week at Leidos was also full of an incredible amount of learning and experiencing what working at this internship would be like. The bulk of my week was spent researching transformers where the goal was to provide commentary of the given status of a simulation based of visual feedback (image-to-text).
 
-Day one mainly consisted of introductions to the company as a whole. After getting my assigned laptop, badge, bag, and a quick tour of the campus, the day mainly consisted of setting up my workspace and doing onboarding lessons. 
+Day one mainly consisted of introductions to the company as a whole. After getting my assigned laptop, badge, bag, and a quick tour of the campus, the day boiled down to setting up my workspace and doing onboarding lessons. 
 
-The highlight of the day was definitely just setting up my workspace and meeting the other interns I would be working with. It was the first time I had to set a monitor (let alone two) and to say I had "cable management"  by the time I was done would be an insult to the word management. Th other interns are also very cool offering advice for both college and the job.
+The highlights of the day came from both setting up my workspace and meeting the other interns I would be working with. It was the first time I had to set a monitor (let alone two) and to say I had "cable management"  by the time I was done would be an insult to the word management. The other interns are also very cool offering advice for both college and the job.
 
 Day two was a bit slow in the grand scheme of things. A lot of the task I hoped I could accomplish throughout the day had to get pushed back as I was waiting for things to download or learning I didn't have access to certain databases yet. 
 
@@ -14,7 +14,7 @@ That being said, today was also the day I started doing research again. Tough I 
 
 Wednesday continued this research focusing more on individual Q-Former models to implement and branch off of. Though I had done research before, I believe that everyone should try to do research in their educational/professional career and I'm glad to have the opportunity to do it again. I know how to navigate the terminal and understand my errors a lot better than I did the fall of 2023 so the process is going a lot smoother. Research is also nice in the fact that you're not only learning new things, but reinforcing your knowledge in other concepts very rapidly along the way. In this case, I was not only learning about the different use cases of different terminals, but the differences between conda and python virtual environments. It nice to be a researcher again while under the professional guidance provided in this internship. [A very ramble-y paragraph on first pass. Also the end (though pretty sincere) feels very tacky]
 
-Thursday consisted of trying to get BLIP-2, our Q-Former of choice, to run locally on my machine. Though a virtual environment was created to run BLIP with all dependencies already running, issues arose when trying to load in a model. The "load_model_and_preprocess" function kept trying to grab models from the internet which isn't allowed due to company policy. Debugging this was very fun as it allowed me to have a legitimate reason to explore (and try and modify) the __init__ files of a program.
+Thursday consisted of trying to get BLIP-2, our Q-Former of choice, to run locally on my machine. Though a virtual environment was created to run BLIP with all dependencies already running, issues arose when trying to load in a model. The "load_model_and_preprocess" function kept trying to grab models from the internet which isn't allowed due to company policy. Debugging this was very fun as it allowed me to have a legitimate reason to explore (and try and modify) the __init__ files of a program for the first time.
 
 On Friday, the scope of my project was shifted. We decided that instead of trying to commentate on a screen of what's going on, it would instead be more productive to explain the given situation from a parsed JSON file of an object's location and heading. This would mean abandoning the previously found models to look into the most recent text-to-text models, most of which could inherently handle a JSON file. 
 

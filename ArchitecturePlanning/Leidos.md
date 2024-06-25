@@ -2,7 +2,7 @@ Links: [[Leidos Week 1 - June 17-21]] [[Leidos Week 2]]
 
 _Intro Paragraph_
 
-If you had tried to explain to me just a year earlier that in the coming summer I would be staying in Alabama for an internship, I now only would've not believed you, I would've thought you were crazy. Despite my hesitation, I found myself in Huntsville, Alabama the summer following my senior year of high school. Through the insd of the 2024 eclipse, I met Mundy Reimer who quickly introduced me to the company he worked for, Leidos, and suggested that I'd apply for the internship. After a series of emails, an interview, and a lot of excitement, I found myself as an engineering intern under both Mundy Reimer and Kyle Nicholson where I would be learning a lot about the development of Transformers for Large Language Models. 
+If you had tried to explain to me just a year earlier that in the coming summer I would be staying in Alabama for an internship, I not only would've not believed you, I would've thought you were crazy. Despite my hesitation, I found myself in Huntsville, Alabama the summer following my senior year of high school. During the weekend of the 2024 solar eclipse, I met Mundy Reimer who was visiting my school and quickly introduced me to the company he worked for, Leidos, and suggested that I'd apply for the internship. After a series of emails, an interview, and a lot of excitement, I found myself as an engineering intern under both Mundy Reimer and Kyle Nicholson where I would be learning a lot about the development of Transformers for Large Language Models. 
 
 I'm grateful for both the work opportunity and the learning experience I ha at Leidos and would highly recommend the experience to anyone interested (assuming I don't go back there myself!).
 
@@ -10,7 +10,9 @@ Though this page will just be a general overview of what I did at my summer at L
 
 _Project Specifics_
 
-Throughout my internship at Leidos, I was under the guidance of Mundy Rimer as a part of the research development team under the ________ team. There I worked on a multitude revolving around the integration of LLM for their simulation. [WIP: Elaborate on all projects worked on over time there]
+Throughout my internship at Leidos, I was under the guidance of Mundy Rimer as a part of the research development team under the ________ team. There I worked on a multitude revolving around the integration of LLM for their simulations. [WIP: Elaborate on all projects worked on over time there]
+
+The first major project I completed was creating a AI commentator for their simulations using LLaMA as a base and parsing information from JSON files. My main takeaways from this project were the research done in finding the best models to us for a given case, how to read and edit the code for larger applications and how to go about fix solutions local to my machine, and the process of fine tuning a model from a general use case to something mor fitting to the task I want to accomplish. 
 
 _Book Club_
 
