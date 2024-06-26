@@ -1,3 +1,4 @@
+Link: [[Error Messages]]
 **Monday**
 
 _Morning 06/24_
@@ -47,131 +48,39 @@ _Afternoon 06/25_
 - Went through error debugging trying to go step by step, minor if zero breakthroughs
 - Machine Learning Bootcamp Day 1
 	- Notes in separate folder
--
-Error message [DO NOT OPEN]
-'''
-	(LLaMA2) C:\Users\nkungad\Desktop\LLaMA2\llama>torchrun --nproc_per_node 1 example_chat_completion.py \ --ckpt_dir llama-2-7b-chat/ \ --tokenizer_path tokenizer.model \ --max_seq_len 512 --max_batch_size 6
-	W0625 13:30:08.454000 27336 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
-	[W socket.cpp:697] [c10d] The client socket has failed to connect to [d-5QMM9N3.corp.leidos.com]:29500 (system error: 10049 - The requested address is not valid in its context.).
-	
-	A module that was compiled using NumPy 1.x cannot be run in
-	NumPy 2.0.0 as it may crash. To support both 1.x and 2.x
-	versions of NumPy, modules must be compiled with NumPy 2.0.
-	Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
-	
-	If you are a user of the module, the easiest solution will be to
-	downgrade to 'numpy<2' or try to upgrade the affected module.
-	We expect that some modules will need time to support NumPy 2.
-	
-	Traceback (most recent call last):  File "C:\Users\nkungad\Desktop\LLaMA2\llama\example_chat_completion.py", line 8, in <module>
-	    from llama import Llama, Dialog
-	  File "C:\Users\nkungad\Desktop\LLaMA2\llama\llama\__init__.py", line 4, in <module>
-	    from .generation import Llama, Dialog
-	  File "C:\Users\nkungad\Desktop\LLaMA2\llama\llama\generation.py", line 13, in <module>
-	    from fairscale.nn.model_parallel.initialize import (
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\__init__.py", line 16, in <module>
-	    from . import nn
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\__init__.py", line 11, in <module>
-	    from .data_parallel import FullyShardedDataParallel
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\data_parallel\__init__.py", line 20, in <module>
-	    from .sharded_ddp import ShardedDataParallel
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\data_parallel\sharded_ddp.py", line 26, in <module>
-	    from fairscale.optim import OSS
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\optim\__init__.py", line 13, in <module>
-	    from .oss import OSS
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\optim\oss.py", line 48, in <module>
-	    obj: Any, src_rank: int, group: object = dist.group.WORLD, dist_device: torch.device = torch.device("cpu")
-	C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\optim\oss.py:48: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ..\torch\csrc\utils\tensor_numpy.cpp:84.)
-	  obj: Any, src_rank: int, group: object = dist.group.WORLD, dist_device: torch.device = torch.device("cpu")
-	C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\distributed_c10d.py:613: UserWarning: Attempted to get default timeout for nccl backend, but NCCL support is not compiled
-	  warnings.warn("Attempted to get default timeout for nccl backend, but NCCL support is not compiled")
-	[W socket.cpp:697] [c10d] The client socket has failed to connect to [d-5QMM9N3.corp.leidos.com]:29500 (system error: 10049 - The requested address is not valid in its context.).
-	Traceback (most recent call last):
-	  File "C:\Users\nkungad\Desktop\LLaMA2\llama\example_chat_completion.py", line 104, in <module>
-	    fire.Fire(main)
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fire\core.py", line 143, in Fire
-	    component_trace = _Fire(component, args, parsed_flag_args, context, name)
-	                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fire\core.py", line 477, in _Fire
-	    component, remaining_args = _CallAndUpdateTrace(
-	                                ^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fire\core.py", line 693, in _CallAndUpdateTrace
-	    component = fn(*varargs, **kwargs)
-	                ^^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\llama\example_chat_completion.py", line 35, in main
-	    generator = Llama.build(
-	                ^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\llama\llama\generation.py", line 85, in build
-	    torch.distributed.init_process_group("nccl")
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\c10d_logger.py", line 75, in wrapper
-	    return func(*args, **kwargs)
-	           ^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\c10d_logger.py", line 89, in wrapper
-	    func_return = func(*args, **kwargs)
-	                  ^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\distributed_c10d.py", line 1312, in init_process_group
-	    default_pg, _ = _new_process_group_helper(
-	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\distributed_c10d.py", line 1513, in _new_process_group_helper
-	    raise RuntimeError("Distributed package doesn't have NCCL built in")
-	RuntimeError: Distributed package doesn't have NCCL built in
-	E0625 13:30:13.849000 27336 torch\distributed\elastic\multiprocessing\api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 34876) of binary: C:\Users\nkungad\Desktop\LLaMA2\Scripts\python.exe
-	Traceback (most recent call last):
-	  File "<frozen runpy>", line 198, in _run_module_as_main
-	  File "<frozen runpy>", line 88, in _run_code
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Scripts\torchrun.exe\__main__.py", line 7, in <module>
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
-	    return f(*args, **kwargs)
-	           ^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\run.py", line 879, in main
-	    run(args)
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\run.py", line 870, in run
-	    elastic_launch(
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
-	    return launch_agent(self._config, self._entrypoint, list(args))
-	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-	  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\launcher\api.py", line 263, in launch_agent
-	    raise ChildFailedError(
-	torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
-	============================================================
-	example_chat_completion.py FAILED
-	------------------------------------------------------------
-	Failures:
-	  <NO_OTHER_FAILURES>
-	------------------------------------------------------------
-	Root Cause (first observed failure):
-	[0]:
-	  time      : 2024-06-25_13:30:13
-	  host      : d-5QMM9N3.corp.leidos.com
-	  rank      : 0 (local_rank: 0)
-	  exitcode  : 1 (pid: 34876)
-	  error_file: <N/A>
-	  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-	============================================================
-	
-	(LLaMA2) C:\Users\nkungad\Desktop\LLaMA2\llama>
-'''
-Initial traceback issue stops here
-	'''
-		Traceback (most recent call last):  File "C:\Users\nkungad\Desktop\LLaMA2\llama\example_chat_completion.py", line 8, in <module>
-		    from llama import Llama, Dialog
-		  File "C:\Users\nkungad\Desktop\LLaMA2\llama\llama\__init__.py", line 4, in <module>
-		    from .generation import Llama, Dialog
-		  File "C:\Users\nkungad\Desktop\LLaMA2\llama\llama\generation.py", line 13, in <module>
-		    from fairscale.nn.model_parallel.initialize import (
-		  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\__init__.py", line 16, in <module>
-		    from . import nn
-		  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\__init__.py", line 11, in <module>
-		    from .data_parallel import FullyShardedDataParallel
-		  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\data_parallel\__init__.py", line 20, in <module>
-		    from .sharded_ddp import ShardedDataParallel
-		  File "C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\fairscale\nn\data_parallel\sharded_ddp.py", line 26, in <module>
-		    from fairscale.optim import OSS
-	'''
-Socket error is thrown here
-	'''
-		C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\distributed\distributed_c10d.py:613: UserWarning: Attempted to get default timeout for nccl backend, but NCCL support is not compiled
-		  warnings.warn("Attempted to get default timeout for nccl backend, but NCCL support is not compiled")
-		[W socket.cpp:697] [c10d] The client socket has failed to connect to [d-5QMM9N3.corp.leidos.com]:29500 (system error: 10049 - The requested address is not valid in its context.).
-	'''
 
+_Morning 06/26_
+- Error with SSL Verification
+	- Possible solution: connect to the "Big IP" VPN
+		- This is counterintuitive; majority of searches said this was the issue
+- Error with other dependencies
+	- Good link: https://github.com/numpy/numpy/issues/24377
+	- Cython downloaded, setuptools downgraded
+	- Goal at the movement: fix The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+- Moved all error messages 
+- Crated a new virtual environment to run through all error messages again
+	- '''$ pip list
+	Package           Version   Editable project location
+	----------------- --------- -------------------------------------
+	fairscale         0.4.13
+	filelock          3.15.4
+	fire              0.6.0
+	fsspec            2024.6.0
+	intel-openmp      2021.4.0
+	Jinja2            3.1.4
+	llama             0.0.1     C:\Users\nkungad\Desktop\LLaMA2\llama
+	MarkupSafe        2.1.5
+	mkl               2021.4.0
+	mpmath            1.3.0
+	networkx          3.3
+	numpy             2.0.0
+	pip               24.1
+	sentencepiece     0.2.0
+	setuptools        65.5.0
+	six               1.16.0
+	sympy             1.12.1
+	tbb               2021.13.0
+	termcolor         2.4.0
+	torch             2.3.1
+	typing_extensions 4.12.2'''
+- 
