@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Error Messages.md",
+                "file": "Leidos Week 2 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Error Messages.md",
+                "file": "Leidos Week 2 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Error Messages.md"
+                "file": "Leidos Week 2 Running Thoughts.md"
               }
             }
           }
@@ -159,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f03fa695153f0b74",
+  "active": "58fcac18aec6fbe2",
   "lastOpenFiles": [
-    "Leidos Week 2 Running Thoughts.md",
     "Error Messages.md",
+    "Leidos Week 2 Running Thoughts.md",
     "Leidos Week 2.md",
     "Untitled",
     "Leidos Week 1 - June 17-21.md",

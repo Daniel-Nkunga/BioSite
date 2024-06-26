@@ -83,4 +83,21 @@ _Morning 06/26_
 	termcolor         2.4.0
 	torch             2.3.1
 	typing_extensions 4.12.2'''
-- 
+
+_Afternoon 06/26_
+- 40 minutes work on Blog css
+- Back to debugging
+	- **SSL** Errors definitely come from not being connected to the VPN; I auto disconnected from the VPN and immediately got SSL errors again and it immediately went away after connecting to the VPN
+	- Deprecating **distutils** error comes from **setuptools** being too updated. Needs to be under 60.X.X 
+		- [Error 1](C:\Users\nkungad\AppData\Local\Temp\1\pip-install-csc9hhc6\numpy_99c8740b858f4cd8818ad7ec56b52f79\tools\cythonize.py:75: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.required_version = LooseVersion('0.29.14'))
+			- [Solution 1](https://stackoverflow.com/questions/71666214/deprecation-warnings-distutils-and-netcdf-file); **DID NOT WORK**
+				- [Set Up Tools Versions](https://pypi.org/project/setuptools/#history); we went with 59.8.0
+			- [Solution 2](https://stackoverflow.com/questions/74928500/python-module-install-error-when-i-tried-to-pip-numpy); **DID NOT WORK**
+				- python -m pip install --force-reinstall numpy==1.18.5
+			- [Solution 3](https://github.com/pytorch/pytorch/issues/84712); **DID NOT FOLLOW THROUGH**
+				- Edited [file](C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\utils\tensorboard\__init__.py)
+				- Error message from 2022; Was not fully followed
+		- [Error 2](  C:\Users\nkungad\AppData\Local\Temp\1\pip-install-20mpxuw0\numpy_b0851c84221147cc81e28756bf6a229d\tools\cythonize.py:77: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.    if LooseVersion(cython_version) < required_version:)
+			- Solution 2;
+				- I'm just upgrading Cython
+					- Original version: 0.29.37
