@@ -96,8 +96,27 @@ _Afternoon 06/26_
 				- python -m pip install --force-reinstall numpy==1.18.5
 			- [Solution 3](https://github.com/pytorch/pytorch/issues/84712); **DID NOT FOLLOW THROUGH**
 				- Edited [file](C:\Users\nkungad\Desktop\LLaMA2\Lib\site-packages\torch\utils\tensorboard\__init__.py)
-				- Error message from 2022; Was not fully followed
+				- Error message from 2022; They might have updated the file because it looks different
+			- Solution 4; **DID NOT WORK
+				- Manually try installing upgrades fer every downloaded package
+					- Skipped: numpy, setuptools
+					- 
 		- [Error 2](  C:\Users\nkungad\AppData\Local\Temp\1\pip-install-20mpxuw0\numpy_b0851c84221147cc81e28756bf6a229d\tools\cythonize.py:77: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.    if LooseVersion(cython_version) < required_version:)
-			- Solution 2;
-				- I'm just upgrading Cython
+			- Solution 1; **DID NOT WORK**
+				- I'm just upgrading Cython to most modern version
 					- Original version: 0.29.37
+			- Solution 2; **DID NOT WORK**
+				- I'm changing version to 0.29.14 to follow the "LooseVersion"
+				- Failed to build wheels
+- I can't install different versions of Numpy in clean environments either; moved testing to conda to test their environments/an environment in python 3.8
+	- Conda environment: numpy3.11.9
+		- Came premade with numpy 2.0.0
+		- Could **NOT** install numpy 1.18.5
+	- Conda environment: numpy3.8.19
+		- Installed numpy 1.24.4 without prompting
+		- Could **NOT** install numpy  2.0.0
+		- Could not install fairscale when trying to test further and 
+	- Conda environment: python3.9.19
+		- Installs both numpy 2.0.0 and 3.9.19
+		- Runs Nkunga.py with a different error
+		- Is not available to download from python website
