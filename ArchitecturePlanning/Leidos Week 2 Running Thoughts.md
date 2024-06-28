@@ -214,3 +214,10 @@ _Afternoon 06/28_
 	3. exit that folder (cd ../../llama) and pip install any missing modules
 		1. pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 	4. Run programs with torchrun
+- Half of the runs made have "Initial" runs made jsut break with no real reason as to wy at the moment
+- ToDo
+	- Test a run while internet is off
+	- Parse fake JSON file 
+		- Create fake JSON file
+		- Fil should have simple coordinates and ask the LLM how to get to one point to another
+	- What for GPU usage
