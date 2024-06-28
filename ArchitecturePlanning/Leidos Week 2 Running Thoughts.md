@@ -120,3 +120,97 @@ _Afternoon 06/26_
 		- Installs both numpy 2.0.0 and 3.9.19
 		- Runs Nkunga.py with a different error
 		- Is not available to download from python website
+
+_Morning 06/27_
+- Arrived at 7:20
+- Updated blog
+- Created python environemnt
+	- Python Version = 3.10.11
+	  numpy = 1.24.4
+	- Created in VSCode (this is a really efficient method)
+	- Numpy dependency issues are gone 
+- [Error 1](c:\Users\nkungad\Desktop\LLaMA2\.venv\lib\site-packages\torch\distributed\distributed_c10d.py:613: UserWarning: Attempted to get default timeout for nccl backend, but NCCL support is not compiledwarnings.warn("Attempted to get default timeout for nccl backend, but NCCL support is not compiled"))
+	- [Solution](https://discuss.pytorch.org/t/runtimeerror-distributed-package-doesnt-have-nccl-built-in/176744) **DID NOT WORK**
+		- NCCL Error: pytoch is using cpu-onlypip 
+	- [Solution 2](https://aronhack.com/run-llama-2-and-other-open-source-llm-in-python-locally/)
+		- 
+- [Error 2](ValueError: Error initializing torch.distributed using env:// rendezvous: environment variable RANK expected, but not set)
+	- ***Cannot torchrun anything due to SSL Verification Issues
+- Caniballize Nkunga.py
+	- Didn't result in much. File runs fine except when it tries to run everything in the file
+- Just use pythorch
+
+_Afternoon 06/27_
+- Before leaving internship, ask Cooper how he interned for the antional la
+- Lunch and learn was very cool
+	- Aviation and drone branch; got to see a test flight; really cool makerspace
+- [Error 1](c:\Users\nkungad\Desktop\LLaMA2\.venv\lib\site-packages\torch\distributed\distributed_c10d.py:613: UserWarning: Attempted to get default timeout for nccl backend, but NCCL support is not compiled warnings.warn("Attempted to get default timeout for nccl backend, but NCCL support is not compiled")) 
+	- PTwGPU.py
+		- Cuda is available for GPU usage
+			- [Source](https://saturncloud.io/blog/how-to-check-if-pytorch-is-using-the-gpu/#:~:text=Checking%20if%20PyTorch%20is%20Using%20the%20GPU,-So%2C%20how%20do&text=calling%20the%20torch.-,cuda.,want%20to%20use%20the%20CPU.)
+			- Reinstalling pytorch to making sure that pytorch is trying to use cuda
+				- [Source](https://github.com/meta-llama/llama3/issues/153)
+		- Dead end: PyTorch is using GPU
+			- Interesting, even when testing with Torch using the CPU, the NCCL error still occurs
+	- LLaMA not on Windows [thread](https://github.com/meta-llama/llama3/issues/132)?
+		- Gloo
+			- Links
+				- https://github.com/meta-llama/llama3/issues/127
+				- https://github.com/meta-llama/llama3/blob/main/llama/generation.py#L68
+				- https://github.com/meta-llama/llama3/issues/132
+				- https://github.com/ccozad/ml-reference-designs/blob/master/llm/llama-3/hello-world/README.md
+				- https://discuss.pytorch.org/t/how-to-set-backend-to-gloo-on-windows/161448/8
+				- https://discuss.huggingface.co/t/run-training-script-in-ddp-using-gloo/15406
+			- Tl;dr: changed line 85 in generation.py
+				- Original: torch.distributed.init_process_group("nccl")
+				- New: torch.distributed.init_process_group("gloo")
+	- [Error 2](python -m torch.distributed.launch llama/example_chat_completion.py)
+		- Rank not found
+			- [Solution](https://github.com/meta-llama/llama/issues/391)
+	- One last error with rank and perhaps socketing. 
+
+_Morning 06/28_
+- [Warning 1](W0628 08:22:34.334000 26188 torch\distributed\elastic\multiprocessing\redirects.py:27]NOTE: Redirects are currently not supported in Windows or MacOs.c:\Users\nkungad\Desktop\LLaMA2\.venv\lib\site-packages\torch\distributed\launch.py:183: FutureWarning: The module torch.distributed.launch is deprecatedand will be removed in future. Use torchrun.Note that --use-env is set by default in torchrun.)
+	- Use [torchrun](https://pytorch.org/docs/stable/elastic/run.html)
+	- pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+- [Error 1]([rank0]: AssertionError: no checkpoint files found in llama\llama-2-7b-chat)
+	- Solution: changed the path in Nkunga.py from a relative path of the entire path **VALIDATION**
+- [Error 2]([rank0]: AssertionError: llama\tokenizer.model)
+	- Solution: changed the path in Nkunga.py from relative path to the entire path **VALIDATION!!!!**
+- Book/Journal club
+	- Both were fun; book club got snubbed because we had to talk about journal club
+- THE PROGRAM RAN
+	- Still has a few errors
+	- It took 820 seconds to run 
+		- This is 13 minutes
+	- Created Nkunga.txt to model model testing. 
+		- All Nkungas have been changed to Initials
+
+_Afternoon 06/28_
+- I tried restructuring things for a GitHub repository (private) and broke everything. Things are broken in a very stable way though so I'm remaking the environemnt
+- Mundy notes
+	- Using the model:
+			- Give the raw JSON
+				- Intermediat filter
+			- Filter model gets rid of irrelevant data
+			- LLaMA
+	- Schedule weekly tormeeting with Kyle 
+	- Heilemier conjecutre
+- Everything is fixed now on the environment side
+- Second.py is able to run
+- Initial.py ran again (2:35) but with no message errors/glitches 
+	- Old Initial.txt is now saved in as InitialGLICHED.txt
+	- Replacement Initial.txt is now being created
+- I commented out the warning about redirects not being supported in Windows or MacOs [at](W0628 14:41:04.223000 36916 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.) 
+- Initial.txt failed when trying to crat the emoji question
+- Making a new venv?
+	- torchrun stopped working so I had to remake another venv; is this going to be a constant thing?
+	- I had the paths wrong and the version of pythorc downlaoded
+- How to set up a venv
+	1. In VSCode, create a new venv through the bottom left option to create one using a specific version of Python
+		1. Make sure to do this in the folder you want the environment to exist in
+		2. By creating the venv in the wanted folder, VSCode my prompt you to already download the modules needed through a requirement.txt file
+	2. In the Command Prompt (not terminal), activate the .venv by going the respctive folder > .venv > Scripts and typing the command: activate.bat
+	3. exit that folder (cd ../../llama) and pip install any missing modules
+		1. pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+	4. Run programs with torchrun
