@@ -13,13 +13,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos Week 2 Running Thoughts.md",
+                "file": "Leidos/Leidos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b1cf68b23bd919c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leidos/Leidos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aaa1a841f38b1591",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7d27aae8d4ff9ab0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leidos/Leidos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1440c006ab09e3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f579d5b185833e0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -85,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos Week 2 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos Week 2 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos Week 2 Running Thoughts.md"
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md"
               }
             }
           }
@@ -146,24 +207,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f03fa695153f0b74",
+  "active": "f579d5b185833e0d",
   "lastOpenFiles": [
-    "Leidos Week 1 - June 17-21.md",
-    "Error Messages.md",
+    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
+    "Leidos/Leidos.md",
+    "Index.md",
+    "Leidos/Weeks/Leidos Week 2.md",
+    "Leidos",
+    "Leidos/Weeks",
+    "Leidos/Error Messages.md",
     "W0628.md",
-    "Leidos Week 2 Running Thoughts.md",
     "Temporary/Pokemon.md",
     "Temporary",
     "Pictures/Excitement.png",
     "Pictures/LLaMA Progres.png",
     "Pictures",
-    "Leidos Week 2.md",
     "2024-06-26.md",
     "Untitled.canvas",
     "Catholic High School for Boys.md",
     "Education.md",
-    "Leidos.md",
-    "Index.md",
     "Missouri S&T.md",
     "ASMSA.md",
     "Work Expirence.md",
