@@ -56,3 +56,9 @@ _Afternoon 07/01_
 - Created fake JSON file and successfully ran a test with JSON.py
 	- Issue with prettifying more than one line of the AM.json files (each line individually is 5800 lines)
 	- The AI was extremely wrong for the record but it tried its best
+		- Example: When asked how to get from John to the origin using cardinal directions, the program instructed
+		1. Move north 45 degrees [units]
+		2. Move east 45 degrees
+		3. Move south 45 degrees
+		4. Move west 45 degrees
+		- Upon no so thoroughly examination, I have determined this would result in John not moving at all
