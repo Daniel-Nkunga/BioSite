@@ -1,0 +1,25 @@
+https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide
+- **Regression Metrics** - metrics calculating some sort of distance between predicted and ground truth
+	- Mean Absolute Error
+	- Mean Squared Error
+	- Root Mean Squared Error
+	- R-Squared
+- **Mean Squared Error** - Finds the average of the squared difference between the target value and the value predicted by the regression model
+	- Double the negative impacts of errors made my the model
+		- Overestimates failures
+- **Mean Absolute Error** - Finds the average of the difference between the ground truth and the predicted values
+	- Finds the actual output of the error but doesn't give the direction of the error
+- **Root Mean Squared Error** - Finds the square root of the average of the squared difference between the target value and the value predicted by the regression model
+	- Data is essentially normalized minimizing outliers 
+- **R-Squared** - Finds metric using the sum of squared errors 
+	- **Post metric**: Calculated using other metrics
+	- How much (what %) of the total variation in Y(target) is explained by the variation in X(regression line)
+	- Results range from (0,1)* where 1 means metric caught all variance in the target and 0 means it wasn't able to catch any variance
+		- * (-infinity, 1)
+- **Adjusted R-Squared** - Finds the metrics using the same process as R-Squared but by using independent variables and subtracting R-Squared to only show improvement
+	- Avoids false accuracies shown when a model overfits to data
+- **Classification Metrics** - metrics that compare discrete classes in some form that evaluate a model's performance and tell how good or bad a classification is 
+	- Accuracy
+	- Confusion Matric
+	- precision and Recall
+	- 

@@ -1,4 +1,8 @@
 
+Weekly To-Do
+- [ ] Find/Folder for Leidos
+- [ ] 
+
 1st July 2024 - To-Do
 - Run model test again
 - Parse 
@@ -62,3 +66,29 @@ _Afternoon 07/01_
 		3. Move south 45 degrees
 		4. Move west 45 degrees
 		- Upon no so thoroughly examination, I have determined this would result in John not moving at all
+
+_Morning 07/02_
+- Minimal amendments to the input message did not help LLaMA process the file an easier
+- Mundy advise
+	- Parse JSON to have positional information (x,y) as one entry or on sentence [the ____ is located at x, y]
+		- Figure out how to parse 
+	- Research how other people have overcome this issue in the past (its common)
+	- Appl for internships in the Bay (Anthropic)
+- Parsing JSON
+	- Either can be done in Pandas or Python's json import
+		- Neither ae fun to use in this occasion (I don't know how to use them)
+- Research
+	- Article 1: [Evaluating Spatial Understanding of Large Language Models](https://arxiv.org/html/2310.14540v2)
+		- Summary: Models can do very simple special reasoning, but they are not the most accurate in any regard
+		- Direct quote when referring to LLaMA 7B and LLaMA 13B: "We omit Llama2-7B and 13B from our discussion because they achieve zero (or very close to zero) accuracy across all structures. This indicates that tackling zero-shot spatial reasoning tasks may necessitate larger models."
+			- Very worrying because the goal was to initially create a model that could run on a laptop of if it requires a model like LLaMA 70B (which doesn't have the highest accuracy anyways)
+		- Article shows the multiple ways you can give spatial information to a LLM (Square,  Random, Snake, etc)
+			- Square: tells the model where objects row by row and left to right and results in the greatest level of accuracy
+			- Random: tells the location of objects using coordinates (notably starting from one and not zero) in a random order
+				- Has lower accuracy than Square, but higher than snake
+				- Could easily be implemented as a for loop for preprocessing
+			- LLaMA was omitted from these results because 70B  were already very low
+			  
+_Afternoon 07/02_
+- Lunch and learn with Keith about the missile recovery program, Gremlins, and future research (SHARK)
+- Reading articles Mundy sent, noted at 
