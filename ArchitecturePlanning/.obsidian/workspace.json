@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 2/An Introductory Tutorial to Neural Networks.md",
+                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week 2/An Introductory Tutorial to Neural Networks.md",
+                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Week 2/An Introductory Tutorial to Neural Networks.md",
+                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Week 2/An Introductory Tutorial to Neural Networks.md"
+                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md"
               }
             }
           }
@@ -160,15 +160,15 @@
   },
   "active": "d31e8a3354fb0904",
   "lastOpenFiles": [
+    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+    "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
     "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
     "Machine Learning Bootcamp/Workflow of Machine Learning.md",
     "Machine Learning Bootcamp/Random.md",
     "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
     "Machine Learning Bootcamp/12 Import Model Evaluations Metrics for Machine Learning Everyone Should Know.md",
     "Machine Learning Bootcamp/What is ML- A Taxonomy of MachineLearning.md",
-    "Week 2/An Introductory Tutorial to Neural Networks.md",
-    "Week 2",
-    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+    "Machine Learning Bootcamp/Week 2",
     "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
     "Leidos/Leidos.md",
     "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
