@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos/Extended Reading - LLMs and Spatial Reasoning.md"
+                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md"
               }
             }
           }
@@ -160,9 +160,9 @@
   },
   "active": "d31e8a3354fb0904",
   "lastOpenFiles": [
+    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
     "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
     "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
-    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
     "Machine Learning Bootcamp/Workflow of Machine Learning.md",
     "Machine Learning Bootcamp/Random.md",
     "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
