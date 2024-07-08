@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6467d12aeabc4e5a",
+        "id": "afa4a9abe832335e",
         "type": "tabs",
         "children": [
           {
-            "id": "d31e8a3354fb0904",
+            "id": "87dd153f5ecdd61d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad1abcf56713835a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning Bootcamp/Workflow of Machine Learning.md",
+                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 3 Running Thoughts.md"
+                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md"
               }
             }
           }
@@ -158,12 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d31e8a3354fb0904",
+  "active": "87dd153f5ecdd61d",
   "lastOpenFiles": [
     "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+    "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
-    "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
     "Machine Learning Bootcamp/Workflow of Machine Learning.md",
+    "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
     "Machine Learning Bootcamp/Random.md",
     "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
     "Machine Learning Bootcamp/12 Import Model Evaluations Metrics for Machine Learning Everyone Should Know.md",
@@ -171,7 +161,6 @@
     "Machine Learning Bootcamp/Week 2",
     "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
     "Leidos/Leidos.md",
-    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Index.md",
     "Leidos/Weeks/Leidos Week 2.md",
     "Leidos",
