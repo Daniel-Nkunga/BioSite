@@ -45,3 +45,7 @@ _Morning 07/08_
 	  - I have a very surface level understanding but I'm not sure how this is going to help with difficulty later on; hard part still seems like it would b getting things locally and on our own devices
   - Linear Algebra and Calculus III keep on showing up; LA was expected but Calculus is appearing so much more than I was expecting; I might need to retake Calculus III just for a better understanding of everything 
   - LLaMA 70B Chat cannot be run on eva because it only has two GPU's available 
+  - Future research links
+	  - [WebNLG](https://paperswithcode.com/dataset/webnlg)
+	  - [QLoRA Paper](https://arxiv.org/pdf/2106.09685)
+	  - [3 Hour YouTube Video](https://www.youtube.com/watch?v=pov3pLFMOPY)
