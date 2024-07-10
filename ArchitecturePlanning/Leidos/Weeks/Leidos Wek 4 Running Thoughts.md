@@ -5,6 +5,7 @@ Weekly To-Do
 - [ ] Ask Mundy if I would be able to do knowledge graph research as a personal project
 - [ ] Copy over Linear Algebra Notes
 - [ ] Ask Tim what book he read to learn Linear Algebra
+- [ ] Fill
 
 _Morning 07/08_
 - Slowly working on JSON parsing
@@ -79,11 +80,89 @@ _Afternoon 07/09_
 	- Uses transformers and LLaMA3
 	- Does a stupid  long sequence where it loads in the checkpoints taking about a minute?
 		- Hard to access time taken because it happens before the main function meaning my time command isn't used
-	- QLoRA
-		- Got one successful run(?) but it no longer recognizes bitsandbytes as a valid import so progress has stagnated
-		- [Error 1](I forgot to record it; tl;dr: it didn't recognize bitsandbytes and reintallig everything somewhat sorted things out)
-			- [Solution](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
-		- [Error 2](TypeError: _BaseAutoModelClass.from_pretrained() missing 1 required positional argument: 'pretrained_model_name_or_path')
-	- Mundy and Nithin talk
-		- RAG approach is best option for starting (specific reasons of why is rag > fine-tuning is beyond me)
+- QLoRA
+	- Got one successful run(?) but it no longer recognizes bitsandbytes as a valid import so progress has stagnated
+	- [Error 1](I forgot to record it; tl;dr: it didn't recognize bitsandbytes and reintallig everything somewhat sorted things out)
+		- [Solution](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+	- [Error 2](TypeError: _BaseAutoModelClass.from_pretrained() missing 1 required positional argument: 'pretrained_model_name_or_path')
+- Mundy and Nithin talk
+	- RAG approach is best option for starting (specific reasons of why is rag > fine-tuning is beyond me)
 - [QLoRA](https://github.com/artidoro/qlora)
+
+_Morning 07/10_
+- Started with a small research onto the structure of RAG architectures
+	- Article itself was pretty okay (they were gassing up this one guy to heck and back)
+	- Architecture itself is pretty intuitive with the only real thing of not being the retrieval process
+		- Sparse Retrievers: utilize traditional search indexes (hash table?) to find relevant data
+			- If we ask "What is the location of bB0?" it should go to the hash of bB0_location_timestep to get the exact coordinates
+				- Can also be used for distance by getting the location of two objects and passing them through a distance calculator function
+		- Dense Retrievers: represents information as dense vectors and use similarity metrics to retrieve the most relevant content
+			- This is also really good, I just can't think of a good good scenario
+		- Domain-Specific Retrievers: tailored o specific fields of data (ex: scientific papers)
+			- This is okay. Ideally most of our information comes in preprocessed and this happens naturally but we can also tune a model to find relevant game information from a larger file and just learn how to read that file
+- QLoRA - one hour attempt
+	- Limited attempt time to optimize time spent trying o fix the issue and because I know how to get everything to a usable state relatively fast
+	1. I uninstalled everyhting from pip
+		- This was extreme but since the issue was with imports and I tended to be messing with those quite a bit, it felt like the "right approach"
+			- [Command: python pip freeze --exclude-editable | xargs pip uninstall -y](https://stackoverflow.com/questions/11248073/how-do-i-remove-all-packages-installed-by-pip)
+	2. I installed everything needed for llama3
+		- Still following commands from the [LLaMA 3 GitHub page](https://github.com/meta-llama/llama3)
+			- Commands (in order):
+				- pip install -e .
+				- pip install huggingface-hub
+				- huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct --include "original/*" --local-dir meta-llama/Meta-Llama-3-8B-Instruct
+					- This command might not work initially because I was already logged into HF. Follow process using log in key
+					- Path to local directory will change per person
+				- pip install transformers
+					- I had a small error (next command) so this might not be needed; try skipping
+				- huggingface-cli download meta-llama/Meta-Llama-3-8B  --local-dir /home/nkungad/main/LLaMA3/llama3
+					- Path to local directory will change per person
+					- ***Command not run in final program
+		- ***Quick total restart following same steps and redownloading llama repository entirely
+	3. I tried reinstalling QLoRA
+		1. Still following instructions from the [QLoRA GitHub page](https://github.com/artidoro/qlora)
+			- Commands (in order):
+				- pip install -U -r requirements.txt
+- Joined Digital Moderation Sector Outreach Teams Meeting
+	- Stressful because anyone had the power to unmute anyone which ***WHY?
+		- I feel unsafe in a room full of unserious people who are willing to make a really funny joke (Carson is a menace and I can't look away from my laptop)
+	- They could've said the most interesting things but I was paying zero attention to anything they
+	- [Internship page](https://careers.leidos.com/pages/intern-and-new-graduate-jobs)
+
+_Afternoon 07/10_
+- Continuing QLoRA Testing
+	- [Error 1](AttributeError: /home/nkungad/main/.venv/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so: undefined symbol: cquantize_blockwise_fp16_nf4)
+		- [Solution 1](https://github.com/artidoro/qlora/issues/31) **DID NOT WORK
+		- [Solution 2](https://github.com/bitsandbytes-foundation/bitsandbytes/issues/112)
+			- pip install bitsandbytes-cuda116
+	- [Error 2](OSError: libcudart.so.11.0: cannot open shared object file: No such file or directory)
+		- [Solution 1](https://github.com/vllm-project/vllm/issues/1369)
+	- [Error 3](AttributeError: module 'bitsandbytes.nn' has no attribute 'Linear8bitLt')
+		- [Solution 1](https://github.com/bitsandbytes-foundation/bitsandbytes/issues/185)
+			- uninstalled and reinstalled bitsandbytes: slightly hiver version: 0.40.0 > 0.43.1
+	- [Error 4](RuntimeError: CUDA error: no kernel image is available for execution on the device CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect. For debugging consider passing CUDA_LAUNCH_BLOCKING=1. Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.)
+		- [Solution 1](https://github.com/vllm-project/vllm/issues/629) **UNTESTESD
+		- [Solution 2](https://stackoverflow.com/questions/69968477/runtimeerror-cuda-error-no-kernel-image-is-available-for-execution-on-the-devi)
+			- <span style="color:pink">ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.xformers 0.0.22 requires torch==2.0.1, but you have torch 2.3.1 which is incompatible.</span>
+				- Terminal still finished 
+				- Command: pip3 install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+			- Caused Error 5
+	- [Error 5](ImportError: /home/nkungad/main/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so: undefined symbol: ncclCommRegister)
+		- [Solution 1](https://github.com/pytorch/pytorch/issues/119932)
+			- <span style="color:pink">ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts. torchaudio 2.3.1 requires torch==2.3.1, but you have torch 2.1.2 which is incompatible. torchvision 0.18.1 requires torch==2.3.1, but you have torch 2.1.2 which is incompatible. xformers 0.0.22 requires torch==2.0.1, but you have torch 2.1.2 which is incompatible.</span>
+	- Nkunga.py ran; (Pdb) is prompting me for a name but I don't know what Pdb is or what its wanting from me
+		- Its the python debugger; type "continue" to finish the program
+- Nkunga.py
+	- Copy and paste of guanaco_generate.py located in examples
+	- Notably generates different messages with every run
+	- Biggest changes to code:
+		- Allowing it more tokens 
+		- Commented out Python Debugger
+		- Both pink errors are gone
+	- Just a text completion program
+- A lot of reading for journal club
+- qlora.py
+	- [Error 1](raise ValueError( ValueError: Tokenizer class GPTNeoXTokenizer does not exist or is not currently imported)
+		- [Solution 1](https://github.com/artidoro/qlora/issues/123)
+	- qlora.py is being run after that one error and it's training something
+		- I have not ben paying attention to much but it looks like it takes 10 minutes for 1% meaning it will take 16 hours to 
