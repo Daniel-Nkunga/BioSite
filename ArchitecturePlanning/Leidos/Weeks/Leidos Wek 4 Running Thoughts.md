@@ -166,3 +166,21 @@ _Afternoon 07/10_
 		- [Solution 1](https://github.com/artidoro/qlora/issues/123)
 	- qlora.py is being run after that one error and it's training something
 		- I have not ben paying attention to much but it looks like it takes 10 minutes for 1% meaning it will take 16 hours to 
+
+_Afternoon 07/11_
+- I totally neglected to update this all morning
+	- QLoRA model failed to run overnight, running it throughout the day with one restart at 10:00; after five hours, only progressed to 25%
+	- Nithin talked me to write up and process the JSON into a sentence while loosing no information
+		- Need to add units to a lot of the options
+		- Had a few issues processing the JSON but mostly because I was being stupid
+	- Did a lot of reading for Journal Club and Book Club
+- Kyle Meeting
+	- Discussion on what I'm doing and notes and smaller explanations on the simulation
+- Journal Club
+- Created working  message generator
+- Got a lot of clarification on the units and specific of AM
+- Lunch and learn over the general aerospace sector and a lot of cool information about the work they do with space industry
+- Message is a lot more complicated than I thought
+	- Each component needs to be a lot more specific than I would think and has multiples ways it can be interpreted/misinterpreted
+	- Just the position, velocity, and orientation of the rocket took an entire page in this iteration
+	- It's also going to require quit a bit of math in the preprocessing
