@@ -184,3 +184,18 @@ _Afternoon 07/11_
 	- Each component needs to be a lot more specific than I would think and has multiples ways it can be interpreted/misinterpreted
 	- Just the position, velocity, and orientation of the rocket took an entire page in this iteration
 	- It's also going to require quit a bit of math in the preprocessing
+
+_Morning of 07/12_
+- Started off the day with EVA not wanting me to be able to log in but that ended up being fine
+- Yaw, pitch, roll
+	- [Conversion article](https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles) (look for the code)
+	- Mundy said to not worry about this
+- Rewrote message to be more thorough for assets and began work on airports
+
+_Afternoon 07/12_
+- Continuing the work on formatting airports 
+- I had questions about what a majority of the tags in HVTS meant but Riley was able to cover a lot my questions while also directing me to where I can see what each label means in the repo
+	- He also gave me another way to label the orientation of the plane only adding to my concern for the best way to represent it
+- My job is like making glorified madlibs right now and its pretty fun speaking that I don't know if half the words I'm trying to fit into my story are verbs, nouns, or adjectives
+- You'll need to review what some of the terms actually mean again
+- You'll want to create an overarching document explaining all terms, coordinate systems, etc
