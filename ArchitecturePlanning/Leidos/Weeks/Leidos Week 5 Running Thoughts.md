@@ -40,3 +40,21 @@ _Afternoon 07/15_
 - .endswith is a cool command
 	- It takes a string argument
 - Found out that I totally missed akv
+
+
+_Morning 07/16_
+- Started with a meeting with Mundy 
+- Working on questions for LLM to base off of
+	- [[Questions and Answers]]
+- Neither LLaMA model is working anymore which is deeply concerning because it means the fine tuning might have worked 
+	- LLaMA2 was able to work with a fresh Nkunga.py based on example chat completion
+	- LLaMA3 is most likely broken due to QLoRA testing as there are a lot of extraneous files in 3B-Instruct
+
+_Afternoon 07/16_
+- Finished [[Questions and Answers]] document and added graphics
+- Pilot location communication
+	- [Plane to Mission Control Commands](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_2.html)
+		- _“Atlanta Center, Duke Four One Romeo, request V-F-R traffic advisories, Twenty Northwest Rome, seven thousand five hundred, over.”_
+	- [Understanding Air Traffic Control Communications](https://www.thrustflight.com/air-traffic-control-communications/)
+		- Notable air control also uses clock face to describe location which shouldn't be the hardest transition from cardinal/ordinal directions
+		- 
