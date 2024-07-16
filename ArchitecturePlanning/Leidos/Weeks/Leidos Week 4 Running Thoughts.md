@@ -1,4 +1,4 @@
-Links: [[Leidos Week 3 Running Thoughts]][[Leidos]]
+Links: [[Leidos Week 3 Running Thoughts]][[Leidos/Leidos]]
 
 
 Weekly To-Do

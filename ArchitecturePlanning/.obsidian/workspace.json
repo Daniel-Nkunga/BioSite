@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "afa4a9abe832335e",
+        "id": "114473d85b77373b",
         "type": "tabs",
         "children": [
           {
-            "id": "87dd153f5ecdd61d",
+            "id": "276898e99cc87a94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a32966aae7379c47",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md"
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md"
               }
             }
           }
@@ -147,19 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87dd153f5ecdd61d",
+  "active": "276898e99cc87a94",
   "lastOpenFiles": [
+    "Keys Explained (inside Message).md",
+    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+    "Leidos/Error Messages.md",
+    "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
+    "Untitled.canvas",
+    "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
+    "Machine Learning Bootcamp/Workflow of Machine Learning.md",
+    "Leidos/Weeks/Leidos Week 2.md",
     "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
-    "Leidos/Weeks/Leidos Wek 4 Running Thoughts.md",
-    "().md",
-    "Leidos/Weeks/Leidos Week 2.md",
-    "2024-06-26.md",
     "Leidos/Leidos.md",
-    "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
+    "2024-07-15.md",
+    "Untitled 1.md",
+    "().md",
+    "2024-06-26.md",
     "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
-    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
-    "Machine Learning Bootcamp/Workflow of Machine Learning.md",
     "Machine Learning Bootcamp/Random.md",
     "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
     "Machine Learning Bootcamp/12 Import Model Evaluations Metrics for Machine Learning Everyone Should Know.md",
@@ -168,20 +173,14 @@
     "Index.md",
     "Leidos",
     "Leidos/Weeks",
-    "Leidos/Error Messages.md",
     "W0628.md",
     "Temporary/Pokemon.md",
     "Temporary",
     "Pictures/Excitement.png",
     "Pictures/LLaMA Progres.png",
     "Pictures",
-    "Untitled.canvas",
     "Catholic High School for Boys.md",
     "Education.md",
-    "Missouri S&T.md",
-    "ASMSA.md",
-    "Work Expirence.md",
-    "Welcome.md",
     "Index.html"
   ]
 }
