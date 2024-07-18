@@ -25,13 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Leidos/Outdated Q&A.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4b27ddffee6bfdc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos/Questions and Answers.md",
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos/Questions and Answers.md",
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos/Questions and Answers.md"
+                "file": "Leidos/Weeks/Leidos Week 5 Running Thoughts.md"
               }
             }
           }
@@ -170,26 +183,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "276898e99cc87a94",
+  "active": "b4b27ddffee6bfdc",
   "lastOpenFiles": [
-    "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
     "Leidos/Questions and Answers.md",
+    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
+    "Leidos/Outdated Q&A.md",
+    "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Pasted image 20240716135434.png",
     "Pasted image 20240716135204.png",
     "Pasted image 20240716134853.png",
     "Pasted image 20240716133314.png",
     "Pasted image 20240716133310.png",
-    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
     "Pasted image 20240716131938.png",
-    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
     "Keys Explained (inside Message).md",
-    "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
     "Leidos/Error Messages.md",
     "Untitled.canvas",
     "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
     "Machine Learning Bootcamp/Workflow of Machine Learning.md",
     "Leidos/Weeks/Leidos Week 2.md",
-    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Leidos/Leidos.md",
     "2024-07-15.md",
     "Untitled 1.md",

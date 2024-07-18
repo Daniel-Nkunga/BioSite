@@ -1,9 +1,12 @@
+---
+https://www.desmos.com/calculator/ybuomhq7kh:
+---
 Links: [[Leidos Week 4 Running Thoughts]][[Leidos/Leidos]]
 
 
 Weekly To-Do
 - [ ] Ask Mundy if I would be able to do knowledge graph research as a personal project
-- [ ] 
+- [ ] Ask Nithin specifically how he implemented RAG
 
 _Morning 07/15_
 - Reworking message by deleting a lot of information and cleaning up repeated timesteps in the AM JSON file
@@ -57,4 +60,20 @@ _Afternoon 07/16_
 		- _“Atlanta Center, Duke Four One Romeo, request V-F-R traffic advisories, Twenty Northwest Rome, seven thousand five hundred, over.”_
 	- [Understanding Air Traffic Control Communications](https://www.thrustflight.com/air-traffic-control-communications/)
 		- Notable air control also uses clock face to describe location which shouldn't be the hardest transition from cardinal/ordinal directions
-		- 
+
+_07/17_
+- Working on finishing the Q&A document
+	- Initially wrote instructions in LaTeX, changed everything to pure text. 
+	- Stopped at describing cardinal directions for lunch
+- I snapped to my senses and realized I'm a programmer at 2:20 so I'm making this a file
+
+_07/18_
+- Pipeline picture/architecture, "Question format screenshot", AM Air Picture, (air picutre is one word), RAG picture explanation
+- Change titles to DARPA label titles
+- Second page
+- Very little notes today
+	- Working on poster for the most part
+- Journal Club article was really good this week
+- [Plane Positional Graph](https://www.desmos.com/calculator/ybuomhq7kh)
+- [RAG Graph](https://www.desmos.com/3d/jkdbrjmaf9)
+- 
