@@ -68,7 +68,7 @@ _07/17_
 - I snapped to my senses and realized I'm a programmer at 2:20 so I'm making this a file
 
 _07/18_
-- Pipeline picture/architecture, "Question format screenshot", AM Air Picture, (air picutre is one word), RAG picture explanation
+- Pipeline picture/architecture, "Question format screenshot", AM Air Picture, (air picture is one word), RAG picture explanation
 - Change titles to DARPA label titles
 - Second page
 - Very little notes today
@@ -76,4 +76,17 @@ _07/18_
 - Journal Club article was really good this week
 - [Plane Positional Graph](https://www.desmos.com/calculator/ybuomhq7kh)
 - [RAG Graph](https://www.desmos.com/3d/jkdbrjmaf9)
-- 
+
+_Morning 07/19_
+- Today is (hopefully) going to be very fast moving because I'm off at 2:30 today
+- First forty minutes was dedicated to turning my laptop on (there is a company wide issue) and finishing my poster
+- Next ten minutes will be me getting sidetracked to finish the last four pages of scheduling
+	- Also the Undertale Jazz is going so hard right now
+- Until lunch, co-worked on remaking some graphics for both poster and presentation
+- Not finished with presentation
+- Redownload clean LLaMA3
+
+_Afternoon 07/19_
+- Ready to send Poster? 
+	- Waiting for final Mundy approval
+	- 
