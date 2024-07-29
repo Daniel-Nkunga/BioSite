@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 6 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leidos/Journal Club.md",
+                "file": "Leidos/Weeks/Leidos Week 7 Running Thoughts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 6 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 7 Running Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 6 Running Thoughts.md",
+                "file": "Leidos/Weeks/Leidos Week 7 Running Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leidos/Weeks/Leidos Week 6 Running Thoughts.md"
+                "file": "Leidos/Weeks/Leidos Week 7 Running Thoughts.md"
               }
             }
           }
@@ -170,13 +171,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5be5a6454459d09c",
+  "active": "14636efdebd92fe8",
   "lastOpenFiles": [
-    "Leidos/Questions and Answers.md",
+    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
     "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
     "Leidos/Weeks/Leidos Week 6 Running Thoughts.md",
-    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 7 Running Thoughts.md",
     "Leidos/Journal Club.md",
+    "Leidos/Weeks/Untitled",
+    "Leidos/Questions and Answers.md",
     "Work Expirence.md",
     "raise.md",
     "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
@@ -204,7 +207,6 @@
     "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
     "Machine Learning Bootcamp/Random.md",
     "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
-    "Machine Learning Bootcamp/12 Import Model Evaluations Metrics for Machine Learning Everyone Should Know.md",
     "Machine Learning Bootcamp/Week 2",
     "Leidos",
     "Leidos/Weeks",

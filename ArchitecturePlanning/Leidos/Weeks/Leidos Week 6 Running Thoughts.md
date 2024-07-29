@@ -70,3 +70,19 @@ _Afternoon 07/26_
 - i feel really anxious right now and i don't know why
 - Alternating practicing presentation and light research until 2:30
 - Spent a majority of the rest of the day remaking Message maker
+
+_Morning 07/26_
+- Presentation day
+	- Went rough in terms of speaking speed  but people said they enjoyed the content
+
+_Afternoon 07/26_
+- Journal Club took up a majority of my time
+- Last minute RAG Test
+	- LLM wouldn't answer questions about the capital of Australia because the RAG didn't have any information about it
+	- Brute force to get an answer by prompting the base LLM to answer the question
+		- RAG_Quesion4.txt
+TODO
+- [ ] Confluence Access
+	- Ask Andrew Molnar, Kyle Nicholson, Nithin and James\
+- [ ] Package Everything
+- [ ] Quantize model
