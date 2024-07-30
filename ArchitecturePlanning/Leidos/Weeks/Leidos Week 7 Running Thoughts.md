@@ -36,3 +36,61 @@ _Afternoon 07/29_
 - Set tokenizer per second files to Nithin to run locally
 	- Sent as a python file that can hopefully be broken down to a Jupyter notebook
 - Got full access to Confluence and GitLab repo
+
+_Morning 07/30_
+- Packaging Day
+- Redownloading Everything
+	1. General Information
+	2. Python Version: 3.10.12
+	3. Uninstalling Everything
+		1. **Command**: pip freeze --exclude-editable | xargs pip uninstall -y
+	4. LLaMA 3
+		1. Clone LLaMA GitHub Repository
+			1. **Command**: git clone https://github.com/meta-llama/llama3.git
+		2. Install required packages for LLaMA repository
+			1. **Command**: pip install -e .
+		3. Go to [Meta LLaMA Website](https://llama.meta.com/llama-downloads/) and download model you want (copy the link)
+			1. Model become more and more demanding as time goes on; Just make sure to not download extra things because its inconvenient
+		4. Run the download file and choose model to download
+			1. **Command**: ./downlaod.sh
+			2. Use link from Meta LLaMA Website
+		5. PIP list saved as PIP_Freeze_LLaMA.txt
+	5. QLoRA
+		1. Clone QLoRA GitHub Repository
+			1. **Command**: git clone https://github.com/artidoro/qlora.git
+		2. Install required packages for QLoRA repository
+			1. **Command**: pip install -U -r requirements.txt
+		3. Reinstall lower version of numpy
+			1. **Command**: pip uninstall numpy
+			2. **Command**: pip install numpy\==1.24.4
+		4. Install bitsandbytes
+			1. **Command**: pip install bitsandbytes-cuda116
+		5. Update xformers
+			1. **Command**: pip install xformers\==v0.0.22
+		6. Reinstall higher version of bitsandbytes
+			1. **Command**: pip uninstall bitsandbytes
+			2. **Command**: pip install bitsandbytes\==0.43.1
+		7. Install lower version of torch
+			1. **Command**: pip uninstall torch
+			2. **Command**: pip install torch\==2.1.2
+		9. Install torch dependencies
+			1. **Command**: pip3 install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+		10. PIP list saved as PIP_Freeze_QLoRA.txt
+	6. LangChain (specifically for LangChain.py file)
+		1. Install LangChain requirements
+			1. **Command**: pip install langchain langchain_community langchain_chroma
+		2. Install langchain_huggingface
+			1. **Command**: pip install langchain_huggingface
+		3. Install datasets
+			1. **Command**: pip install datasets
+		4. Install missing requirements
+			1. **Command**: pip install einops
+		5. PIP list saved as PIP_Freeze_LangCahin.txt
+- Watched Defense Sector Intern Tech Talk: Defense Systems Overview Zoom meeting
+	- This one was one of the best; Doug Jones is a really interesting person
+- Reworked 
+
+_Afternoon 07/30_
+- Created Confluence LLaMA Download page
+- Created Confluence QLoRA Download page
+- Created Confluence LangChain Download page

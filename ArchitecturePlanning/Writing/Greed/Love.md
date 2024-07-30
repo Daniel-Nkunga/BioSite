@@ -1,0 +1,4 @@
+Links: [[Greed]]
+
+## Summary
+**NAME** is a 25 year old man who is debating breaking up with this girlfriend. There's a new app that is meant to be the end all be all of all dating apps that uses everything the internet does and could possibly know about you to match you with the most compatible person. The issue is that **NAME** is already in a relationship and its not even a bad one. He's comfortable with his girlfriend. She's beautiful, nice, and cares for him. He cares for her. He just know its not going to go anywhere further. The fire that burned at the beginning had fizzled out just leaving warm embers and it wasn't bad, just not fulfilling. Will he (should he) leave her in the hopes that someone new through this app will show him someone who will start a fir and keep it burning?

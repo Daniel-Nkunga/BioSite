@@ -1,0 +1,1 @@
+A serious of short stories about Greed in human nature and the weird ways it might show up

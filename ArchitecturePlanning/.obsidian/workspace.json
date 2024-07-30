@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5be5a6454459d09c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "14636efdebd92fe8",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,47 +160,50 @@
   },
   "active": "14636efdebd92fe8",
   "lastOpenFiles": [
-    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
-    "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
+    "id_ed25519 1.pub",
+    "id_ed25519.pub",
+    "Education.md",
+    "Writing/Greed/Greed.md",
+    "Writing/Greed/Death.md",
+    "Writing/Greed/Love.md",
+    "Writing/Greed",
+    "Writing",
+    "Index.md",
+    "Leidos/Keys Explained (inside Message).md",
+    "Missouri S&T.md",
+    "Work Expirence.md",
+    "Leidos/Images/Pasted image 20240716131938.png",
+    "Leidos/Images/Pasted image 20240716135434.png",
+    "Leidos/Images",
     "Leidos/Weeks/Leidos Week 6 Running Thoughts.md",
+    "2024-06-26.md",
+    "2024-07-15.md",
     "Leidos/Weeks/Leidos Week 7 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 4 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 5 Running Thoughts.md",
+    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
     "Leidos/Journal Club.md",
     "Leidos/Weeks/Untitled",
     "Leidos/Questions and Answers.md",
-    "Work Expirence.md",
     "raise.md",
     "Leidos/Extended Reading - LLMs and Spatial Reasoning.md",
     "Leidos/Outdated Q&A.md",
-    "Leidos/Weeks/Leidos Week 2 Running Thoughts.md",
-    "Leidos/Weeks/Leidos Week 3 Running Thoughts.md",
     "W0628.md",
-    "Pasted image 20240716135434.png",
-    "Pasted image 20240716135204.png",
-    "Pasted image 20240716134853.png",
-    "Pasted image 20240716133314.png",
-    "Pasted image 20240716133310.png",
-    "Pasted image 20240716131938.png",
-    "Keys Explained (inside Message).md",
+    "Leidos/Images/Pasted image 20240716135204.png",
+    "Leidos/Images/Pasted image 20240716134853.png",
+    "Leidos/Images/Pasted image 20240716133314.png",
+    "Leidos/Images/Pasted image 20240716133310.png",
     "Leidos/Error Messages.md",
     "Untitled.canvas",
     "Leidos/Weeks/Leidos Week 1 - June 17-21.md",
-    "Machine Learning Bootcamp/Workflow of Machine Learning.md",
-    "Leidos/Weeks/Leidos Week 2.md",
-    "Leidos/Leidos.md",
-    "2024-07-15.md",
-    "Untitled 1.md",
-    "().md",
-    "2024-06-26.md",
-    "Machine Learning Bootcamp/Week 2/An Introductory Tutorial to Neural Networks.md",
-    "Machine Learning Bootcamp/Random.md",
-    "Machine Learning Bootcamp/Performance Matrix in Machine Learning.md",
-    "Machine Learning Bootcamp/Week 2",
+    "Leidos/Machine Learning Bootcamp/Workflow of Machine Learning.md",
+    "Leidos/Machine Learning Bootcamp/Week 2",
     "Leidos",
     "Leidos/Weeks",
     "Temporary",
     "Pictures/Excitement.png",
     "Pictures/LLaMA Progres.png",
-    "Pictures",
-    "Index.html"
+    "Pictures"
   ]
 }
