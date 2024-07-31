@@ -106,7 +106,7 @@ Since both the distance of bB1 relative to bB0 are known, bB1's position relativ
 **Solving**: 
 First, define bB0 as the starting asset and bB1 as the comparing asset. bB0 will have its x-coordinate at -3677502 assigned to the variable x1 and its y-coordinate at -3959553 assigned to the variable y1. bB1 will have its x-coordinate at -3221538 assigned to the variable x2 and its y-coordinate at -3233178 assigned to the variable y2. 
 
-Second, find the distance between bB0 and bB1. Given the distance equation ((x1 - x2)^2 + (y1 - y2)^2)^(1/2) and the variables given, x1, x2, y1, and y2 in the equation can be replaced with their known values resulting in the equation: distance = ((-3677502 - (-3221538))^2 + (-3959553 - (-3233178))^2)^(1/2). This equation can then be solved to get the number 857626.8477. This number can then be rounded to the nearest whole number to get the final distance of 857,627.
+Second, find the distance between bB0 and bB1. Given the distance equation ((x1 - x2)^2 + (y1 - y2)^2)^(1/2) and the variables given, x1, x2, y1, and y2 in the equation can be replaced with their known values resulting in the equation: distance = ((-3677502 - (-3221538))^2 + (-3959553 - (-3233178))^2)^(1/2). This equation can then be solved to get the number 857,626.8477. This number can then be rounded to the nearest whole number to get the final distance of 857,627.
 
 Third, determine if bB1 is in front of, behind, left of, or right of bB0. Since y1 is less than y2, bB1 is in front of bB0. Since x1 is less than x2, bB1 is right of bB0. bB1 is in front of and to the right of bB0.
 

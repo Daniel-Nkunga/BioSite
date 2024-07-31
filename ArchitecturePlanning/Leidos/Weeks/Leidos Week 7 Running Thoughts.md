@@ -94,3 +94,25 @@ _Afternoon 07/30_
 - Created Confluence LLaMA Download page
 - Created Confluence QLoRA Download page
 - Created Confluence LangChain Download page
+
+_Morning 07/31_
+- Its the last day of July. That's weird
+- Creating GitLab repo
+	- To-Do
+		- [ ] Delete contents of llama3.egg-info
+		- [ ] Delete contents of Meta-Llama-3-8B
+		- [ ] Delete contents of Meta-Llama-3-8B-Instruct
+		- [ ] Delete llama
+	- Deleted contents
+		- .gitignore
+		- Llama3_Repo.jpeg
+
+_Afternoon 07/31_
+- Command updates
+	- Require the creation of a venv
+		- Require this venv has pip
+	- REQUIRE PIP
+- Apparently I entered too much into a flow state when downloading llama for the first time because I accidentally made things easy on myself
+	- My VSCode autoactivates a venv that already has pip installed
+	- Pip and python are not inherently installed on eva
+	- 
